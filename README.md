@@ -1,2 +1,2 @@
-Source code to nickshek.github.io
+Source code to [nickshek.github.io](http://nickshek.github.io/)
 =================================
