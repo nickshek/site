@@ -1,7 +1,7 @@
 ---
 title: 使用ubuntu在localhost建立subdomain
-#categories:
-#    - features
+categories:
+    - apache
 
 ---
 有好多時候，我們需要在localhost測試多個project無論是(php,Ruby,Python的項目)。在localhost建立subdomain可以讓我們在同一主機測試不同項目:

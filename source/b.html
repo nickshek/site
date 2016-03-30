@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Posts Archive
+title: 所有文章
 generator: pagination
 use:
     - posts
 
 ---
 {% set year = '0' %}
-<h2>Posts Archive</h2>
+<h2>所有文章</h2>
 {% for post in page.pagination.items %}
 {% set this_year %}{{ post.date | date("Y") }}{% endset %}
 {% if year != this_year %}

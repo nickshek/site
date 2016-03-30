@@ -1,8 +1,7 @@
 ---
 title: 在rails migration改變column type
-#categories:
-#    - features
-
+categories:
+    - rails
 ---
 假設我們要改變sub_anonrums table的title,將其欄位種類由:text改為:string方法如下:
 
