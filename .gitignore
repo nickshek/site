@@ -7,3 +7,5 @@
 /source/components/
 s3.conf
 /node_modules
+/vendor
+composer.lock
