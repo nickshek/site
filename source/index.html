@@ -8,10 +8,9 @@ use:
     - posts
 ---
 {% for post in page.pagination.items %}
-    <article>
-        <header>
-            <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
-        </header>
+    <div class="content-grid-info">
+      <div class="post-info">
+      <h4><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>  {{ post.date|date("Y-m-d") }}</h4>
         <div>
             {{ post.blocks.content|raw }}
         </div>
@@ -23,11 +22,12 @@ use:
             {% endfor %}
             </p>
         {% endif %}
-    </article>
+        </div>
+    </div>
 {% endfor %}
 {% if page.pagination.previous_page or page.pagination.next_page %}
     <nav>
-        {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">Newer Posts</a>{% endif %}<br />
-        {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">Older Posts</a>{% endif %}<br />
+        {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">更新的文章</a>{% endif %}<br />
+        {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">更舊的文章</a>{% endif %}<br />
     </nav>
 {% endif %}
