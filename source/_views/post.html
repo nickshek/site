@@ -45,33 +45,35 @@
     </article>
 
 
-{% if site.disqus.shortname and site.disqus.shortname != '' %}
 <div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = '{{site.disqus.shortname}}'; // required: replace example with your forum shortname
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+     */
 
+    var hashCode = function(s){
+      return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0);
+    };
 
-    {% if page.disqus.identifier  %}var disqus_identifier = '{{page.disqus.identifier}}'; {% endif %}
+    var disqus_config = function () {
+        this.page.url = "{{site.disqus.url}}";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = hashCode("{{ page.title }}"); // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
 
-    {% if page.disqus.title %}var disqus_title = '{{page.disqus.title}}';{% endif %}
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
 
-    {% if page.disqus.url %}var disqus_url = '{{page.disqus.url}}';{% endif %}
+        s.src = '//nicksheksblog.disqus.com/embed.js';
 
-    {% if page.disqus.category_id %}var disqus_category_id = '{{page.disqus.category_id}}';{% endif %}
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function () {
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
     })();
 </script>
-<noscript>Please enable JavaScript to view the
-    <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered byDisqus.</a>
-</noscript>
-{% endif %}
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 
+{% endblock %}
+
+{% block scripts_after %}
+<script id="dsq-count-scr" src="//nicksheksblog.disqus.com/count.js" async></script>
 {% endblock %}

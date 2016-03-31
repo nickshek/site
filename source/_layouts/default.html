@@ -121,6 +121,22 @@
             background-color: #334161;
           }
         }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px; height: 0; overflow: hidden;
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
         </style>
     </head>
     <body>
@@ -159,7 +175,14 @@
                 </div>
                 <div class="span4 sidebar">
                     <div class="well">
-                        <h4>{{ site.title }}{% if site.subtitle %} <small>{{ site.subtitle }}</small>{% endif %}</h4>
+                        <h4>天氣</h4>
+                        <div>
+                          <a href="http://www.accuweather.com/en/hk/hong-kong/1123655/weather-forecast/1123655" class="aw-widget-legal">
+<!--
+By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+-->
+</a><div id="awcc1459444431179" class="aw-widget-current"  data-locationkey="1123655" data-unit="c" data-language="en-us" data-useip="true" data-uid="awcc1459444431179"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+                        </div>
                     </div>
                     <div class="well sidebar-nav">
                         <h4>有用連結</h4>
