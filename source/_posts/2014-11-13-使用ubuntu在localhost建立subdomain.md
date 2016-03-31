@@ -110,4 +110,4 @@ sudo a2ensite /etc/apache2/sites-available/project1.conf
 sudo a2ensite /etc/apache2/sites-available/project2.conf
 ```
 
-4.輸入sudo service apache2 restart重新啟動apache2
+4.輸入 ```sudo service apache2 restart``` 重新啟動apache2
