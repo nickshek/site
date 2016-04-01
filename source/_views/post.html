@@ -8,7 +8,7 @@
     <div class="content-grid-info">
       {#<img src="images/post1.jpg" alt=""/>#}
       <div class="post-info">
-      <h4><a href="single.html">{{ page.title }}</a>  {{ page.date|date("Y-m-d") }}</h4>
+      <h4><a href="#">{{ page.title }}</a>  {{ page.date|date("Y-m-d") }}</h4>
       <div>
           {{ page.blocks.content|raw }}
       </div>
@@ -73,3 +73,5 @@
 {% block scripts_after %}
 <script id="dsq-count-scr" src="//nicksheksblog.disqus.com/count.js" async></script>
 {% endblock %}
+
+{% block homeactive %}class="active"{% endblock %}

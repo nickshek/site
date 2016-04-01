@@ -4,35 +4,37 @@ title: 所有文章
 generator: pagination
 use:
     - posts
-
+active: b
 ---
 {% set year = '0' %}
-<h2>所有文章</h2>
-{% for post in page.pagination.items %}
-{% set this_year %}{{ post.date | date("Y") }}{% endset %}
-{% if year != this_year %}
-  {% set month = '0' %}
-  {% set year = this_year %}
-{% endif %}
-{% set this_month %}{{ post.date | date("F") }}{% endset %}
-{% if month != this_month %}
-  {% set month = this_month %}
-  <h3>{{ month }} {{ year }}</h3>
-{% endif %}
-  <div>
-    <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-  </div>
-{% endfor %}
+<div class="info-block">
+  <h2>所有文章</h2>
+  {% for post in page.pagination.items %}
+  <div class="post_block">
+    {% set this_year %}{{ post.date | date("Y") }}{% endset %}
+    {% if year != this_year %}
+      {% set month = '0' %}
+      {% set year = this_year %}
+    {% endif %}
+    {% set this_month %}{{ post.date | date("F") }}{% endset %}
+    {% if month != this_month %}
+      {% set month = this_month %}
+      <h3 class="year_and_month">{{ month }} {{ year }}</h3>
+    {% endif %}
+      <div class="post_link">
+        <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+      </div>
+    </div>
+    {% endfor %}
 
-<div>
-{% if page.pagination.previous_page or page.pagination.next_page %}
-    <nav class="article clearfix">
-    {% if page.pagination.previous_page %}
-    <a class="previous" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Previous Page"><span class="title">Previous Page</span></a>
-    {% endif %}
-    {% if page.pagination.next_page %}
-    <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Next Page"><span class="title">Next Page</span></a>
-    {% endif %}
-    </nav>
-{% endif %}
+  {% if page.pagination.previous_page or page.pagination.next_page %}
+      <nav class="article clearfix">
+      {% if page.pagination.previous_page %}
+      <a class="previous" href="{{ site.url }}{{ page.pagination.previous_page.url }}" title="Previous Page"><span class="title">上一頁</span></a>
+      {% endif %}
+      {% if page.pagination.next_page %}
+      <a class="next" href="{{ site.url }}{{ page.pagination.next_page.url }}" title="Next Page"><span class="title">下一頁</span></a>
+      {% endif %}
+      </nav>
+  {% endif %}
 </div>

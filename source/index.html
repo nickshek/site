@@ -6,6 +6,7 @@ pagination:
     max_per_page: 3
 use:
     - posts
+active: index
 ---
 {% for post in page.pagination.items %}
     <div class="content-grid-info">
@@ -26,7 +27,7 @@ use:
     </div>
 {% endfor %}
 {% if page.pagination.previous_page or page.pagination.next_page %}
-    <nav>
+    <nav class="page">
         {% if page.pagination.previous_page %}<a href="{{ site.url }}{{ page.pagination.previous_page.url }}">更新的文章</a>{% endif %}<br />
         {% if page.pagination.next_page %}<a href="{{ site.url }}{{ page.pagination.next_page.url }}">更舊的文章</a>{% endif %}<br />
     </nav>

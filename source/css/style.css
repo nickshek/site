@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 html, body{
     font-size: 100%;
 	background-size:cover;
-	font-family: 'Oswald', sans-serif;	
+	font-family: 'Oswald', sans-serif;
 }
 body a{
 transition: 0.5s all ease;
@@ -17,7 +17,7 @@ transition: 0.5s all ease;
 -ms-transition: 0.5s all ease;
 }
 h1,h2,h3,h4,h5,h6{
-	margin:0;			   
+	margin:0;
 }
 p{
 	margin:0;
@@ -114,7 +114,7 @@ color:#00aeff;
 margin-right:0.7em;
 display:inline-block;
 text-decoration:none;
-font-family: 'Oswald', sans-serif;	
+font-family: 'Oswald', sans-serif;
 font-weight:400;
 text-transform:uppercase;
 }
@@ -905,4 +905,62 @@ height: 135px;
 .content-form h3 {
 font-size: 1.1em;
 }
+}
+
+
+.info-block h2{
+  color:#00aeff;
+  font-size:2em;
+  margin-bottom: 5px;
+}
+
+.info-block .year_and_month{
+  color: #4a5054;
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+
+.info-block .post_link{
+  color: #7C7C7C;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95em;
+  line-height:1.8em;
+  font-weight: 400;
+  margin-bottom:1em;
+}
+
+.info-block .article.clearfix{
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.info-block .post_block{
+  margin-top: 2em;
+}
+
+/*Courier 10 Pitch*/
+
+.logo{
+  height: 169px;
+  width: 1px;
+  margin: 0px;
+  margin-left: 15px;
+}
+
+@media (max-width:768px) {
+  .logo{
+    height: 50px;
+    width: 1px;
+    margin-left:10px;
+  }
+}
+nav.article ul{
+  list-style: none;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+nav.page{
+  margin-bottom: 50px;
 }
