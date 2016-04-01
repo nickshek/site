@@ -5,13 +5,28 @@
 {% endblock %}
 
 {% block content_wrapper %}
-    <article>
-        <header>
-            <h2>{{ page.title }}</h2>
-        </header>
-        <div>
-            {{ page.blocks.content|raw }}
-        </div>
+    <div class="content-grid-info">
+      {#<img src="images/post1.jpg" alt=""/>#}
+      <div class="post-info">
+      <h4><a href="#">{{ page.title }}</a>  {{ page.date|date("Y-m-d") }}</h4>
+      <div>
+          {{ page.blocks.content|raw }}
+      </div>
+      </div>
+    </div>
+    {% if page.previous_post or page.next_post %}
+        <nav class="article">
+            <ul>
+                {% if page.next_post %}
+                    <li>下一篇: <a class="next" href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span></a></li>
+                {% endif %}
+                {% if page.previous_post %}
+                    <li>上一篇: <a class="previous" href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="title">{{ page.previous_post.title }}</span></a></li>
+                {% endif %}
+            </ul>
+        </nav>
+    {% endif %}
+
         {#
         {% if page.categories %}
             <p class="categories">
@@ -30,20 +45,6 @@
             </p>
         {% endif %}
         #}
-        {% if page.previous_post or page.next_post %}
-            <nav class="article">
-                <ul>
-                    {% if page.next_post %}
-                        <li>下一篇: <a class="next" href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span></a></li>
-                    {% endif %}
-                    {% if page.previous_post %}
-                        <li>上一篇: <a class="previous" href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="title">{{ page.previous_post.title }}</span></a></li>
-                    {% endif %}
-                </ul>
-            </nav>
-        {% endif %}
-    </article>
-
 
     <div id="disqus_thread"></div>
     <script>
@@ -72,3 +73,5 @@
 {% block scripts_after %}
 <script id="dsq-count-scr" src="//nicksheksblog.disqus.com/count.js" async></script>
 {% endblock %}
+
+{% block homeactive %}class="active"{% endblock %}
