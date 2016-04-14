@@ -187,15 +187,15 @@ color:#00aeff;
 .content-right {
 padding-left: 1em;
 }
-.recent,.comments,.archives{
+.recent,.comments,.archives,.music{
 margin-bottom:3em;
 }
-.recent h3,.comments h3,.archives h3,.categories h3{
+.recent h3,.comments h3,.archives h3,.categories h3,.music h3{
 color:#4a5054;
 font-size:1.1em;
 margin-bottom:0.5em;
 }
-.recent ul li,.comments ul li,.archives ul li,.categories ul li{
+.recent ul li,.comments ul li,.archives ul li,.categories ul li,.music ul li{
 display:block;
 }
 .recent li a,.comments ul li a,.archives ul li a,.categories ul li a{
