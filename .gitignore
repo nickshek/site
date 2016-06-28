@@ -10,3 +10,4 @@ s3.conf
 /vendor
 composer.lock
 sculpin.lock
+.tags
