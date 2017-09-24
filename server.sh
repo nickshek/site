@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sculpin generate --watch --server
+php vendor/bin/sculpin generate --watch --server
