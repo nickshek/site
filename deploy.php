@@ -2,10 +2,10 @@
 
 // deploy.php
 env('local_release_path', '~/git/nickshek.github.io');
-
+env('sculpin', './vendor/bin/sculpin');
 
 task('sculpin:build', function () {
-    runLocally('sculpin generate --env=prod');
+    runLocally('{{sculpin}} generate --env=prod');
 })->desc('build a static web site');
 
 task('sculpin:copy_source',function(){
