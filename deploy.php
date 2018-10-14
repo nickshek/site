@@ -1,7 +1,7 @@
 <?php
 
 // deploy.php
-env('local_release_path', '~/git/nickshek.github.io');
+env('local_release_path', '~/Code/nickshek.github.io');
 env('sculpin', './vendor/bin/sculpin');
 
 task('sculpin:build', function () {
