@@ -1,5 +1,22 @@
-Source code to [nickshek.github.io](http://nickshek.github.io/)
-=================================
-You may want to navigate [https://sculpin.io/](https://sculpin.io/) to build you own static web sites on github.
+# site
 
-You may also want to view [publish.sh](./publish.sh) or [deploy.php](./deploy.php) for how I deploy my github website using deployer-php
+> Nick Shek&#39;s Blog
+
+## Build Setup
+
+``` bash
+# install dependencies
+$ npm install
+
+# serve with hot reload at localhost:3000
+$ npm run dev
+
+# build for production and launch server
+$ npm run build
+$ npm start
+
+# generate static project
+$ npm run generate
+```
+
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
