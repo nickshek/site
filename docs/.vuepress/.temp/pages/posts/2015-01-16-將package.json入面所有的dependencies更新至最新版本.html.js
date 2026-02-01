@@ -1,3 +1,0 @@
-import comp from "/home/nickshek/Code/site/docs/.vuepress/.temp/pages/posts/2015-01-16-將package.json入面所有的dependencies更新至最新版本.html.vue"
-const data = JSON.parse("{\"path\":\"/posts/2015-01-16-%E5%B0%87package.json%E5%85%A5%E9%9D%A2%E6%89%80%E6%9C%89%E7%9A%84dependencies%E6%9B%B4%E6%96%B0%E8%87%B3%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC.html\",\"title\":\"將package.json入面所有的dependencies更新至最新版本\",\"lang\":\"zh-HK\",\"frontmatter\":{\"title\":\"將package.json入面所有的dependencies更新至最新版本\",\"date\":\"2015-01-16T00:00:00.000Z\",\"tags\":[\"node.js\"]},\"git\":{},\"filePathRelative\":\"posts/2015-01-16-將package.json入面所有的dependencies更新至最新版本.md\"}")
-export { comp, data }

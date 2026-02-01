@@ -1,3 +1,0 @@
-import comp from "/home/nickshek/Code/site/docs/.vuepress/.temp/pages/posts/2016-07-09-docker build image 時出現 no space left on device.html.vue"
-const data = JSON.parse("{\"path\":\"/posts/2016-07-09-docker%20build%20image%20%E6%99%82%E5%87%BA%E7%8F%BE%20no%20space%20left%20on%20device.html\",\"title\":\"docker build image 時出現 no space left on device\",\"lang\":\"zh-HK\",\"frontmatter\":{\"title\":\"docker build image 時出現 no space left on device\",\"date\":\"2016-07-09T00:00:00.000Z\",\"tags\":[\"docker\"]},\"git\":{},\"filePathRelative\":\"posts/2016-07-09-docker build image 時出現 no space left on device.md\"}")
-export { comp, data }

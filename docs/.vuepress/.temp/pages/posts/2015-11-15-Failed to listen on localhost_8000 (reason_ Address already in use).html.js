@@ -1,3 +1,0 @@
-import comp from "/home/nickshek/Code/site/docs/.vuepress/.temp/pages/posts/2015-11-15-Failed to listen on localhost_8000 (reason_ Address already in use).html.vue"
-const data = JSON.parse("{\"path\":\"/posts/2015-11-15-Failed%20to%20listen%20on%20localhost_8000%20(reason_%20Address%20already%20in%20use).html\",\"title\":\"Failed to listen on localhost:8000 (reason: Address already in use)\",\"lang\":\"zh-HK\",\"frontmatter\":{\"title\":\"Failed to listen on localhost:8000 (reason: Address already in use)\",\"date\":\"2015-11-15T00:00:00.000Z\",\"tags\":[\"php\"]},\"git\":{},\"filePathRelative\":\"posts/2015-11-15-Failed to listen on localhost:8000 (reason: Address already in use).md\"}")
-export { comp, data }

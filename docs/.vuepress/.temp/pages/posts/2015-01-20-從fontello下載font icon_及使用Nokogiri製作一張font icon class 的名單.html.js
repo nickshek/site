@@ -1,3 +1,0 @@
-import comp from "/home/nickshek/Code/site/docs/.vuepress/.temp/pages/posts/2015-01-20-從fontello下載font icon_及使用Nokogiri製作一張font icon class 的名單.html.vue"
-const data = JSON.parse("{\"path\":\"/posts/2015-01-20-%E5%BE%9Efontello%E4%B8%8B%E8%BC%89font%20icon_%E5%8F%8A%E4%BD%BF%E7%94%A8Nokogiri%E8%A3%BD%E4%BD%9C%E4%B8%80%E5%BC%B5font%20icon%20class%20%E7%9A%84%E5%90%8D%E5%96%AE.html\",\"title\":\"從http://fontello.com/下載font icon,及使用Nokogiri製作一張font icon class 的名單\",\"lang\":\"zh-HK\",\"frontmatter\":{\"title\":\"從http://fontello.com/下載font icon,及使用Nokogiri製作一張font icon class 的名單\",\"date\":\"2015-01-20T00:00:00.000Z\",\"tags\":[\"ruby\"]},\"git\":{},\"filePathRelative\":\"posts/2015-01-20-從fontello下載font icon,及使用Nokogiri製作一張font icon class 的名單.md\"}")
-export { comp, data }

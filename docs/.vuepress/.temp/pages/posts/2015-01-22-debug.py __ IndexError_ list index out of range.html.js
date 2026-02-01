@@ -1,3 +1,0 @@
-import comp from "/home/nickshek/Code/site/docs/.vuepress/.temp/pages/posts/2015-01-22-debug.py __ IndexError_ list index out of range.html.vue"
-const data = JSON.parse("{\"path\":\"/posts/2015-01-22-debug.py%20__%20IndexError_%20list%20index%20out%20of%20range.html\",\"title\":\"debug.py => IndexError: list index out of range\",\"lang\":\"zh-HK\",\"frontmatter\":{\"title\":\"debug.py => IndexError: list index out of range\",\"date\":\"2015-01-22T00:00:00.000Z\",\"tags\":[\"django\"]},\"git\":{},\"filePathRelative\":\"posts/2015-01-22-debug.py => IndexError: list index out of range.md\"}")
-export { comp, data }

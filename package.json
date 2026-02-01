@@ -25,6 +25,7 @@
   ],
   "homepage": "https://nickshek.github.io",
   "devDependencies": {
+    "glob": "^13.0.0",
     "vitepress": "^1.5.0",
     "vue": "^3.5.13"
   }

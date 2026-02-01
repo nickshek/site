@@ -1,3 +1,0 @@
-import comp from "/home/nickshek/Code/site/docs/.vuepress/.temp/pages/posts/2014-12-30-利用regular expression判斷URL是否為YouTube URL，且return youtube video ID.html.vue"
-const data = JSON.parse("{\"path\":\"/posts/2014-12-30-%E5%88%A9%E7%94%A8regular%20expression%E5%88%A4%E6%96%B7URL%E6%98%AF%E5%90%A6%E7%82%BAYouTube%20URL%EF%BC%8C%E4%B8%94return%20youtube%20video%20ID.html\",\"title\":\"利用regular expression判斷URL是否為YouTube URL，且return youtube video ID\",\"lang\":\"zh-HK\",\"frontmatter\":{\"title\":\"利用regular expression判斷URL是否為YouTube URL，且return youtube video ID\",\"date\":\"2014-12-30T00:00:00.000Z\",\"tags\":[\"python\"]},\"git\":{},\"filePathRelative\":\"posts/2014-12-30-利用regular expression判斷URL是否為YouTube URL，且return youtube video ID.md\"}")
-export { comp, data }
