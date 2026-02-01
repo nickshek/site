@@ -4,7 +4,8 @@
   "type": "module",
   "description": "Nick Shek's personal blog powered by VitePress",
   "scripts": {
-    "dev": "vitepress dev docs",
+    "dev": "vitepress dev docs --host 0.0.0.0 --port 5173",
+    "dev:debug": "DEBUG=vite:* vitepress dev docs --host 0.0.0.0 --port 5173",
     "build": "vitepress build docs",
     "preview": "vitepress preview docs",
     "migrate": "node scripts/migrate-posts.js"

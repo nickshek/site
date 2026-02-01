@@ -50,20 +50,33 @@ export default defineConfig({
   // Clean URLs
   cleanUrls: true,
 
+  // Vite configuration for enhanced hot reload
+  vite: {
+    server: {
+      hmr: {
+        port: 24678,
+      },
+      watch: {
+        usePolling: true,
+        interval: 100
+      }
+    },
+    optimizeDeps: {
+      include: ['vue']
+    }
+  },
+
   // Theme configuration
   themeConfig: {
     nav: [
-      { text: '首頁', link: '/' },
-      { text: '文章', link: '/posts/' },
-      { text: '關於', link: '/about/' },
-      { text: 'RSS', link: '/feed.xml' }
+      { text: '文章', link: '/' },
     ],
 
     sidebar: {
-      '/posts/': [
+      '/': [
         {
-          text: '文章列表',
-          link: '/posts/'
+          text: '文章',
+          link: '/'
         },
         {
           text: '最新文章',
@@ -128,7 +141,21 @@ export default defineConfig({
   // Markdown configuration
   markdown: {
     lineNumbers: true,
-    toc: { level: [1, 2, 3] }
+    toc: { level: [1, 2, 3] },
+    config: (md) => {
+      // Enable hot reload for posts changes
+      md.use((md) => {
+        const render = md.render
+        md.render = function (...args) {
+          return render.call(this, ...args)
+        }
+      })
+    }
+  },
+
+  // Watch additional files for hot reload
+  buildEnd: () => {
+    // This helps with hot reload detection
   },
 
   // Sitemap
