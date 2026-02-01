@@ -1,0 +1,3 @@
+import comp from "/home/nickshek/Code/site/docs/.vuepress/.temp/pages/posts/2018-10-14-在Cento 7下使用Cisco AnyConnect Secure Mobility Client.html.vue"
+const data = JSON.parse("{\"path\":\"/posts/2018-10-14-%E5%9C%A8Cento%207%E4%B8%8B%E4%BD%BF%E7%94%A8Cisco%20AnyConnect%20Secure%20Mobility%20Client.html\",\"title\":\"在Cento 7下使用Cisco AnyConnect Secure Mobility Client\",\"lang\":\"zh-HK\",\"frontmatter\":{\"title\":\"在Cento 7下使用Cisco AnyConnect Secure Mobility Client\",\"date\":\"2018-10-14T00:00:00.000Z\"},\"git\":{},\"filePathRelative\":\"posts/2018-10-14-在Cento 7下使用Cisco AnyConnect Secure Mobility Client.md\"}")
+export { comp, data }

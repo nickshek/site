@@ -1,4 +1,4 @@
-name: Deploy VuePress to GitHub Pages
+name: Deploy VitePress to GitHub Pages
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build VuePress site
+      - name: Build VitePress site
         run: npm run build
 
       - name: Checkout target repository
@@ -45,7 +45,7 @@ jobs:
 
       - name: Copy built files
         run: |
-          cp -r docs/.vuepress/dist/* dist-repo/
+          cp -r docs/.vitepress/dist/* dist-repo/
 
       - name: Commit and push to target repository
         run: |

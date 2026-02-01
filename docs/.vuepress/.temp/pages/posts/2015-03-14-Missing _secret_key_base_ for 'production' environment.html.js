@@ -1,0 +1,3 @@
+import comp from "/home/nickshek/Code/site/docs/.vuepress/.temp/pages/posts/2015-03-14-Missing _secret_key_base_ for 'production' environment.html.vue"
+const data = JSON.parse("{\"path\":\"/posts/2015-03-14-Missing%20_secret_key_base_%20for%20'production'%20environment.html\",\"title\":\"Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`\",\"lang\":\"zh-HK\",\"frontmatter\":{\"title\":\"Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml`\",\"date\":\"2015-03-14T00:00:00.000Z\",\"tags\":[\"rails\"]},\"git\":{},\"filePathRelative\":\"posts/2015-03-14-Missing `secret_key_base` for 'production' environment.md\"}")
+export { comp, data }

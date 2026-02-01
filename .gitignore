@@ -5,10 +5,10 @@ yarn-error.log
 package-lock.json
 yarn.lock
 
-# VuePress
-docs/.vuepress/dist/
-docs/.vuepress/.cache/
-docs/.vuepress/.temp/
+# VitePress
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+docs/.vitepress/.temp/
 
 # OS
 .DS_Store
@@ -20,7 +20,8 @@ Thumbs.db
 *.swp
 *.swo
 
-# Old Sculpin files (kept for reference)
+# Old files (backup)
+*.bak
 output_*/
 vendor/
 composer.lock
