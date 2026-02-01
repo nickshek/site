@@ -1,10 +1,10 @@
-# Nick Shek's Personal Blog
+# Nick Shek's Blog
 
 [![Deploy Status](https://github.com/nickshek/site/actions/workflows/deploy.yml/badge.svg)](https://github.com/nickshek/site/actions/workflows/deploy.yml)
 
 🌐 **Live Site:** [https://nickshek.github.io](https://nickshek.github.io)
 
-個人技術部落格，分享開發經驗、技術筆記和解決方案。
+My personal blog built with [VuePress v2](https://v2.vuepress.vuejs.org/), migrated from [Sculpin](https://sculpin.io/). This repository contains the source code, configuration, and deployment setup for the blog.
 
 ---
 
