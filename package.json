@@ -1,17 +1,28 @@
 {
   "name": "site",
-  "version": "0.0.0",
-  "description": "A simple blog powered by Sculpin",
+  "version": "2.0.0",
+  "description": "Nick Shek's personal blog powered by VuePress",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "migrate": "node scripts/migrate-posts.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nickshek/site.git"
+    "url": "git+https://github.com/nickshek/site.git"
   },
-  "author": "",
-  "license": "BSD-2-Clause",
+  "author": "Nick Shek",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nickshek/site/issues"
+  },
+  "keywords": [
+    "blog",
+    "vuepress",
+    "personal-blog"
+  ],
+  "homepage": "https://nickshek.github.io",
+  "devDependencies": {
+    "vuepress": "^1.9.10"
   }
 }
