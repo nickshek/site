@@ -25,3 +25,5 @@ Thumbs.db
 output_*/
 vendor/
 composer.lock
+docs/.vuepress/.cache/
+docs/.vuepress/.temp

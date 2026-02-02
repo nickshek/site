@@ -24,9 +24,9 @@
   "homepage": "https://nickshek.github.io",
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.26",
-    "@vuepress/theme-default": "^2.0.0-rc.121",
     "sass-embedded": "^1.97.3",
     "vue": "^3.5.27",
-    "vuepress": "^2.0.0-rc.26"
+    "vuepress": "^2.0.0-rc.26",
+    "vuepress-theme-hope": "^2.0.0-rc.56"
   }
 }
