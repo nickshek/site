@@ -71,7 +71,7 @@ function generatePostsData() {
       }
       
       return {
-        path: `/posts/${filename.replace(/\.md$/, '.html')}`,
+        path: `/article/${filename.replace(/\.md$/, '.html')}`,
         title: title,
         date: date || new Date().toISOString().split('T')[0],
         tags: Array.isArray(frontmatter.tags) ? frontmatter.tags : [],

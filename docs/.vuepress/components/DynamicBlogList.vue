@@ -73,7 +73,7 @@ const posts = computed(() => {
       .replace(/\.md$/, '')
     
     return {
-      path: `/posts/${encodeURIComponent(item.filename.replace(/\.md$/, '.html'))}`,
+      path: `/article/${encodeURIComponent(item.filename.replace(/\.md$/, '.html'))}`,
       title: title,
       date: dateObj,
       year: dateObj.getFullYear(),
