@@ -65,7 +65,7 @@ site/
 
 ## 📝 Writing Posts
 
-Blog posts are located in `docs/posts/`.
+Blog posts are located in `docs/article/`.
 
 ### Post Format
 
