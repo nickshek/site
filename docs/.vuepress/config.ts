@@ -4,7 +4,7 @@ import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
   lang: 'en-US',
-  title: 'Nick Shek',
+  title: 'Nick Shek\'s Homepage',
   description: 'Nick Shek\'s Blog',
 
   base: '/',
@@ -33,6 +33,8 @@ export default defineUserConfig({
     
     sidebar: false,
     
+    aside: false,
+    
     editLink: false,
     
     lastUpdated: true,
@@ -45,10 +47,13 @@ export default defineUserConfig({
       medias: {
         GitHub: 'https://github.com/nickshek',
       },
+      excerptLength: 0,
     },
 
     plugins: {
-      blog: true,
+      blog: {
+        excerptLength: 999999,
+      },
       
       comment: {
         provider: 'None',
