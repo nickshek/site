@@ -1,13 +1,29 @@
-/.sculpin/
-/app/cache/*
-/app/config/sculpin_kernel_*.yml
-/app/config/sculpin_site_*.yml
-/app/logs/*
-/output_*/
-/source/components/
-s3.conf
-/node_modules
-/vendor
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# VitePress
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+docs/.vitepress/.temp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Old files (backup)
+*.bak
+output_*/
+vendor/
 composer.lock
-sculpin.lock
-.tags
+docs/.vuepress/.cache/
+docs/.vuepress/.temp

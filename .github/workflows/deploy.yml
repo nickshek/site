@@ -1,0 +1,57 @@
+name: Deploy VitePress to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build VitePress site
+        run: npm run build
+
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          repository: nickshek/nickshek.github.io
+          path: dist-repo
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Clean target repository
+        run: |
+          cd dist-repo
+          # Keep .git directory
+          find . -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
+
+      - name: Copy built files
+        run: |
+          cp -r docs/.vitepress/dist/* dist-repo/
+
+      - name: Commit and push to target repository
+        run: |
+          cd dist-repo
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "🚀 Deploy from site repo - $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+          git push

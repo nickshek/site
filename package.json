@@ -1,17 +1,32 @@
 {
   "name": "site",
-  "version": "0.0.0",
-  "description": "A simple blog powered by Sculpin",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Nick Shek's personal blog powered by VuePress v2",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nickshek/site.git"
+    "url": "git+https://github.com/nickshek/site.git"
   },
-  "author": "",
-  "license": "BSD-2-Clause",
+  "author": "Nick Shek",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nickshek/site/issues"
+  },
+  "keywords": [
+    "blog",
+    "vitepress",
+    "personal-blog"
+  ],
+  "homepage": "https://nickshek.github.io",
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.26",
+    "sass-embedded": "^1.97.3",
+    "vue": "^3.5.27",
+    "vuepress": "^2.0.0-rc.26",
+    "vuepress-theme-hope": "^2.0.0-rc.56"
   }
 }
