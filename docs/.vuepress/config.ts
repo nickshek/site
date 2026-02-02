@@ -3,7 +3,7 @@ import { hopeTheme } from 'vuepress-theme-hope'
 import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
-  lang: 'zh-HK',
+  lang: 'en-US',
   title: 'Nick Shek',
   description: 'Nick Shek\'s Blog',
 
@@ -12,7 +12,6 @@ export default defineUserConfig({
   bundler: viteBundler(),
 
   theme: hopeTheme({
-    lang: "en-US",
     hostname: 'https://nickshek.github.io',
     
     author: {
