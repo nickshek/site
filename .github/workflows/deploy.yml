@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - feature/migrate-to-vuepress
   workflow_dispatch:
 
 permissions:
@@ -35,13 +36,13 @@ jobs:
         with:
           repository: nickshek/nickshek.github.io
           path: dist-repo
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_PAT }}
 
       - name: Clean target repository
         run: |
           cd dist-repo
-          # Keep .git directory
-          find . -mindepth 1 -maxdepth 1 ! -name '.git' -exec rm -rf {} +
+          # Keep .git directory and CNAME (if exists)
+          find . -mindepth 1 -maxdepth 1 ! -name '.git' ! -name 'CNAME' -exec rm -rf {} +
 
       - name: Copy built files
         run: |
