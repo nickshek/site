@@ -9,7 +9,14 @@
           </RouterLink>
           <span class="post-date">{{ formatDate(post.date) }}</span>
           <div v-if="post.tags && post.tags.length > 0" class="post-tags">
-            <span v-for="tag in post.tags" :key="tag" class="tag">{{ tag }}</span>
+            <RouterLink 
+              v-for="tag in post.tags" 
+              :key="tag" 
+              :to="`/tag/${encodeURIComponent(tag)}/`"
+              class="tag"
+            >
+              {{ tag }}
+            </RouterLink>
           </div>
         </li>
       </ul>
@@ -175,6 +182,14 @@ const formatDate = (date) => {
   padding: 0.2rem 0.5rem;
   border-radius: 3px;
   font-size: 0.8rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.tag:hover {
+  background-color: #3eaf7c;
+  color: white;
+  transform: translateY(-1px);
 }
 
 @media (max-width: 768px) {
