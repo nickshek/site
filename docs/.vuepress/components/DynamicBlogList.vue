@@ -22,6 +22,7 @@ import { computed } from 'vue'
 
 // Hardcoded post data for now - this could be made dynamic later
 const postsData = [
+  { filename: '2026-02-02-網站遷移完成.md', date: '2026-02-02', tags: ['blog', 'vuepress', 'ai', 'automation'] },
   { filename: '2018-10-15-在Centos7下安裝Chrome.md', date: '2018-10-15', tags: ['linux', 'centos'] },
   { filename: '2018-10-14-在Cento 7下使用Cisco AnyConnect Secure Mobility Client.md', date: '2018-10-14', tags: ['linux', 'centos', 'vpn'] },
   { filename: '2017-09-24-差不多半年沒有更新blog了.md', date: '2017-09-24', tags: [] },
