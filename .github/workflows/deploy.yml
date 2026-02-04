@@ -46,7 +46,7 @@ jobs:
 
       - name: Copy built files
         run: |
-          rsync -av --delete docs/.vuepress/dist/ dist-repo/
+          rsync -av docs/.vuepress/dist/ dist-repo/
 
       - name: Commit and push to target repository
         run: |
