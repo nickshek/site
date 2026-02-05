@@ -56,7 +56,18 @@ export default defineUserConfig({
       },
       
       comment: {
-        provider: 'None',
+        provider: 'Giscus',
+        repo: 'nickshek/nickshek.github.io',
+        repoId: 'MDEwOlJlcG9zaXRvcnk1NTAyMjg5Nw==',
+        category: 'Announcements',
+        categoryId: 'DIC_kwDOA0eVMc4C17Nv',
+        mapping: 'pathname',
+        strict: false,
+        reactionsEnabled: true,
+        inputPosition: 'top',
+        lightTheme: 'light',
+        darkTheme: 'dark',
+        lazyLoading: true,
       },
 
       copyCode: {},
