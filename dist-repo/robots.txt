@@ -1,4 +1,0 @@
-User-agent:*
-Disallow:
-
-Sitemap: https://nickshek.github.io/sitemap.xml
