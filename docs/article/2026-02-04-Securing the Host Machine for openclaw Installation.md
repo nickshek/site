@@ -59,7 +59,7 @@ sudo dpkg-reconfigure unattended-upgrades
 
 Regularly run security audits using tools like Lynis or OpenVAS to identify and address potential vulnerabilities.
 
-``bash
+```bash
 openclaw security audit --deep
 ```
 
