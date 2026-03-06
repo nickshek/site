@@ -11,6 +11,27 @@ export default defineUserConfig({
 
   bundler: viteBundler(),
 
+  // Google Analytics
+  head: [
+    [
+      'script',
+      {
+        async: true,
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-XTBYQX6JWX',
+      },
+    ],
+    [
+      'script',
+      {},
+      `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XTBYQX6JWX');
+      `,
+    ],
+  ],
+
   theme: hopeTheme({
     hostname: 'https://nickshek.github.io',
     
