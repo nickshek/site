@@ -116,7 +116,7 @@ export default defineUserConfig({
     docsDir: 'docs',
 
     navbar: [
-      { text: '文章', link: '/' },
+      { text: 'Articles', link: '/' },
     ],
     
     sidebar: false,

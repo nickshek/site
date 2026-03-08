@@ -10,7 +10,7 @@ My personal blog built with [VuePress v2](https://v2.vuepress.vuejs.org/), migra
 
 ## 🛠️ Tech Stack
 
-- **Framework:** [VuePress v2](https://v2.vuepress.vuejs.org/) (Next)
+- **Framework:** [VuePress v2](https://v2.vuepress.vuejs.org/)
 - **Theme:** Default Theme
 - **Deployment:** GitHub Actions → GitHub Pages
 - **Language:** Traditional Chinese (繁體中文)
@@ -165,18 +165,6 @@ npm update
 # Check outdated packages
 npm outdated
 ```
-
----
-
-## 🤝 Contributing
-
-This is a personal blog, but suggestions and corrections are welcome!
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ---
 
