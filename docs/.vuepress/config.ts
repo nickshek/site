@@ -194,7 +194,7 @@ const generatePhotoGalleryPage = async (): Promise<void> => {
         const encodedFullName = encodeURIComponent(photo.file)
         const encodedThumbnailName = encodeURIComponent(photo.thumbnailFile)
 
-        return `<a href="/photos/${encodedFullName}"><img src="/photos/.thumbnails/${encodedThumbnailName}" loading="lazy" width="${THUMBNAIL_WIDTH}" height="${THUMBNAIL_HEIGHT}" /></a>`
+        return `<a href="/photos/${encodedFullName}"><img src="/photos/thumbnails/${encodedThumbnailName}" loading="lazy" width="${THUMBNAIL_WIDTH}" height="${THUMBNAIL_HEIGHT}" /></a>`
       })
 
       lines.push(thumbnails.join(' '))
