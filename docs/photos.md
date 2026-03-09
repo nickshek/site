@@ -7,7 +7,7 @@ timeline: false
 
 # Photo Gallery
 
-Photos are auto-discovered from `/docs/photos/`, grouped by shooting date, and shown as thumbnails.
+The following is a collection of photos I've taken with my M43 camera. I'll try to keep this gallery updated with my latest shots. Click on any thumbnail to view the full-size image.
 
 ## 2026-02-15
 

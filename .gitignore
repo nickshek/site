@@ -30,3 +30,5 @@ docs/.vuepress/.temp
 docs/.vuepress/config.ts.010f28eb.mjs
 docs/.vuepress/dist/
 docs/photos/.thumbnails/
+docs/photos.md
+docs/.vuepress/public/photos/.thumbnails/

@@ -10,7 +10,7 @@ import sharp from 'sharp'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const docsRoot = path.resolve(__dirname, '..')
-const photosDir = path.resolve(docsRoot, 'photos')
+const photosDir = path.resolve(docsRoot, ".vuepress", "public" , 'photos')
 const thumbnailsDir = path.resolve(photosDir, '.thumbnails')
 const galleryPagePath = path.resolve(docsRoot, 'photos.md')
 const THUMBNAIL_WIDTH = 320
@@ -173,7 +173,7 @@ const generatePhotoGalleryPage = async (): Promise<void> => {
   ]
 
   if (files.length === 0) {
-    lines.push('No photos yet. Add image files to `/docs/photos/` and this page will update automatically.')
+    lines.push('No photos yet. Add image files to `/docs/.vuepress/public/photos/` and this page will update automatically.')
     lines.push('')
   }
   else {

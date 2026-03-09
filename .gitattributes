@@ -1,1 +1,2 @@
 docs/photos/** filter=lfs diff=lfs merge=lfs -text
+docs/.vuepress/public/photos/** filter=lfs diff=lfs merge=lfs -text
