@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - fix/github-actions-lfs
   workflow_dispatch:
 
 permissions:
